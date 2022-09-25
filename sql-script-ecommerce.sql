@@ -12,6 +12,8 @@ Address varchar(300) not null,
 Client_Type enum('Legal Person', 'Natural Person') default 'Legal Person'
 );
 
+alter table clients auto_increment=1;
+
 -- 1criar tabela Natural Person
 create table naturalPerson(
 IdNaturalPerson int auto_increment primary key,
